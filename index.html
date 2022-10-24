@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lafi Burgir</title>
+    <link rel="icon" href="img/lafiburgir.png">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+     <!-- jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JS Link -->
+    <script src="sql.js"></script>
+    <script src="main.js"></script>
+</head>
+<body id="body">
+    <!-- Nav -->
+    <header>
+        <a href="img/1666288490828.jpg" target="_blank" class="logo">Lafi</a>
+        <div class="bx bx-menu" id="menu-icon" onclick="navresp()"></div>
+
+        <ul class="navbar" id="navbar">
+            <li><a href="#home" onclick="resetnav()">Főmenü</a></li>
+            <li><a href="#about" onclick="resetnav()">Információ</a></li>
+            <li><a href="#menu" onclick="resetnav()">Étlap</a></li>
+            <li><a href="#order" onclick="resetnav()">Rendelés</a></li>
+            <li><a href="#service" onclick="resetnav()">Szolgáltatások</a></li>
+            <li><a href="#contact" onclick="resetnav()">Kapcsolat</a></li>
+            <li><div class="bx bx-menu" id="menu-icon" onclick="resetnav()"></div></li>
+            <!-- Sötétmód -->
+            <div class="bx bx-moon" id="darkmode" onclick="darkmode(), resetnav()"></div>
+        </ul>
+    </header>
+    
+    <!-- Főmenü -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Lafi Burgir</h1>
+            <h2>Legjobb burgirok Lafitól, <br> a legnagyobb falusitól</h2>
+            <a href="#menu" class="btn">Menü</a>
+        </div>
+        <div class="home-img">
+            <img src="img/lafiburgir.png">
+        </div>
+    </section>
+
+    <!-- Infó -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/istockphoto-1254672762-612x612.jpg">
+        </div>
+        <div class="about-text">
+            <span>Információ</span>
+            <h2>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, officiis neque. Minus eos aliquid repellendus, culpa suscipit dolores earum natus?</p>
+            <a href="#order" class="btn">Rendelés</a>
+        </div>
+    </section>
+
+    <!-- Étlap -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Étlap</span>
+            <h2>Jó burgirok minden napra</h2>
+        </div>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/lafifriss-doboz.png" alt="">
+                    <h2>Lafi Friss</h2>
+                    <h3>Fasza dobozos innivaló</h3>
+                    <span>599 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/burgir.png" alt="">
+                    <h2>Sajtburesz</h2>
+                    <h3>Kurvadrága, nem jó</h3>
+                    <span>1269 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/lov-budget-burgir.png" alt="">
+                        <h2>Low budget burgir</h2>
+                        <h3>Olcsó, elvileg finom</h3>
+                        <span>199 HUF</span>
+                        <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/nagylafimenu.png" alt="">
+                    <h2>Lafi Menü</h2>
+                    <h3>3 finom burgir</h3>
+                    <span>3659 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/nigaburger.png" alt="">
+                    <h2>Burgir + niga</h2>
+                    <h3>Jár hozzá egy niga</h3>
+                    <span>999 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/lafimenu2.jpg" alt="">
+                    <h2>Olcsóbb Lafi Menü</h2>
+                    <h3>Burgir és kóla</h3>
+                    <span>1499 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/meki.png" alt="">
+                    <h2>Mekdánelces menü</h2>
+                    <h3>Lopott</h3>
+                    <span>4349 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/lafiramen.jpg" alt="">
+                    <h2>1 adag ramen</h2>
+                    <h3>Nem zacskós</h3>
+                    <span>2999 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/tanyer.png" alt="">
+                    <h2>Tányér</h2>
+                    <h3>Vedd meg nem adunk!</h3>
+                    <span>349 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/kenyer.png" alt="">
+                    <h2>Kenyér</h2>
+                    <h3>1 kiló kenyér</h3>
+                    <span>30 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/blackburgir.png" alt="">
+                    <h2>Fekete burgir</h2>
+                    <h3>Egyenesen a gyapotmezőről</h3>
+                    <span>5679 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/falusiburgir.jpg" alt="">
+                    <h2>Falusi burgir</h2>
+                    <h3>Errefele zsíroskenyérnek csúfolják</h3>
+                    <span>1790 HUF</span>
+                    <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rendelés -->
+    <section class="order" id="order">
+        <h2>Rendelés és házhozszállítás ingyen</h2>
+        <form>
+            <fieldset>
+                <legend>Cucc</legend>
+                <input type="text" class="form-control" id="item">
+                <legend>Darab</legend>
+                <input type="number" class="form-control" id="quantity"> <br>
+                <button type="button" id="create" class="btn">Létrehozás</button>
+                <button type="button" id="insert" class="btn">Hozzáad</button>
+                <button type="button" id="remove" class="btn">Törlés</button>
+                <button type="button" id="list" class="btn">Kiiratás</button>
+            </fieldset>
+        </form>
+        <hr>
+        <h4>Rendelés tartalma</h4>
+        <table id="itemlist">
+
+        </table>
+    </section>
+            
+    <!-- Szolgáltatások -->
+    <section class="service" id="service">
+        <div class="heading">
+            <span>Szolgáltatások</span>
+            <h2>A legjobb burgirokat hozzuk nektek</h2>
+        </div>
+        <div class="services-container">
+            <div class="s-box">
+                <img src="img/service.png" alt="">
+                <h3>0/24 rendelésfelvevés</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloremque aliquam impedit harum esse optio.</p>
+            </div>
+            <div class="s-box">
+                <img src="img/szallitas.png" alt="">
+                <h3>Ingyenes házhozszállítás</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloremque aliquam impedit harum esse optio.</p>
+            </div>
+            <div class="s-box">
+                <img src="img/helyben.jpg" alt="">
+                <h3>Helyben fogyasztás</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloremque aliquam impedit harum esse optio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kapcsolatfelvétel -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Beszéljen velünk</span>
+            <h2>Valami nem jó? Nem érdekel :c</h2>
+        </div>
+        <a href="https://www.tiktok.com/@megbasztamanyadesapad/video/7156519935114497285?is_from_webapp=1&sender_device=pc&web_id=7101653903398176261" target="_blank" class="btn">Kapcsolat</a>
+    </section>
+
+    <!-- Kapcsoaltok -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>Kapcsolatok</h3>
+            <div class="social">
+                <a href="https://www.tiktok.com/@megbasztamanyadesapad" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://lafi.hu/" target="_blank"><i class='bx bxl-internet-explorer' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Menüpontok</h3>
+            <li><a href="#home">Főmenü</a></li>
+            <li><a href="#about">Információ</a></li>
+            <li><a href="#menu">Étlap</a></li>
+            <li><a href="#service">Szolgáltatások</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+            <li><a href="#order">Rendelés</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Gyors hozzáférés</h3>
+            <li><a href="#kapcsoalt">Kapcsolat</a></li>
+            <li><a href="#adatvedelem">Adatvédelmi irányelvek</a></li>
+            <li><a href="#jogi">Jogi nyilatkozat</a></li>
+            <li><a href="#szolgaltatsi">Szolgáltatási feltételek</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Elérhetőség</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d283.1894381878316!2d21.61718375435319!3d47.5256085553516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470e126f604401%3A0x8f271fee14d8556c!2sDSZC%20Mechwart%20Andr%C3%A1s%20G%C3%A9pipari%20%C3%A9s%20Informatikai%20Technikum!5e0!3m2!1shu!2shu!4v1666630397752!5m2!1shu!2shu" width="300rem" height="200rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <i class='bx bxs-map'><span>Mechart</span></i>
+            <i class='bx bxs-phone'><span>+36 90 420 6969</span></i>
+            <i class='bx bxs-envelope'><span>lafiburgir@lafi.com</span></i>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; LafiBurgir Minden Jog Fenntartva.</p>
+    </div>
+
+    <!-- Megjelenés animáció -->
+    <script>
+        const sr = ScrollReveal ({
+            origin: 'top',
+            distance: '40px',
+            duration: 2000,
+            reset: true
+        })
+
+        sr.reveal('.home-text, .home-img, .about-img, .about-text, .box, .s-box, .btn, .connect-text, .contact-box',{interval:200});
+    </script>
+</body>
+</html>
