@@ -1,5 +1,6 @@
 var db = window.openDatabase("itemDB","1.0","itemDB",65535);
 
+
         $(function(){
             $("#create").click(function(){
                 db.transaction(function(transaction){
@@ -23,17 +24,20 @@ var db = window.openDatabase("itemDB","1.0","itemDB",65535);
                     })
                 });
             });
-            $("#insert").click(function(){
+            $("#insert").click(function(){ 
+                const etlap = ["Lafi Friss", "Sajtburesz", "Low budget burgir", "Lafi Menü", "Burgir + niga", "Olcsóbb Lafi Menü", "Mekdánelces menü", "1 adag ramen", "Tányér", "1 kiló kenyér", "Fekete burgir", "Falusi Burgir"];
                 var item = $("#item").val();
                 var qty = $("#quantity").val();
-                db.transaction(function(transaction){
-                    var sql = "INSERT INTO items(item, quantity) VALUES(?,?)";
-                    transaction.executeSql(sql,[item,qty],function(){
-                        alert("Új cucc sikeresen hozzáadva a rendeléshez!");
-                    },function(){
-                        alert("Nem sikerült hozzáadni az új cuccot a rendeléshez!");
+                if (etlap.includes(item)){
+                    db.transaction(function(transaction){
+                        var sql = "INSERT INTO items(item, quantity) VALUES(?,?)";
+                        transaction.executeSql(sql,[kaja,qty],function(){
+                            alert("Új cucc sikeresen hozzáadva a rendeéshez!");
+                        },function(){
+                            alert("Nem sikerült hozzáadni!");
+                        })
                     })
-                });
+                }
             });
             $("#list").click(function(){
                 $("#itemlist").children().remove();

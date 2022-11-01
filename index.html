@@ -15,7 +15,7 @@
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- JS Link -->
-    <script src="sql.js"></script>
+    <!--<script src="sql.js"></script>-->
     <script src="main.js"></script>
 </head>
 <body id="body">
@@ -69,7 +69,7 @@
             <h2>Jó burgirok minden napra</h2>
         </div>
         <div class="menu-container">
-            <div class="box">
+            <div class="box" id="lafifriss">
                 <div class="box-img">
                     <img src="img/lafifriss-doboz.png" alt="">
                     <h2>Lafi Friss</h2>
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="box-img">
+                <div class="box-img" id="sajtburesz">
                     <img src="img/burgir.png" alt="">
                     <h2>Sajtburesz</h2>
                     <h3>Kurvadrága, nem jó</h3>
@@ -87,7 +87,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-                <div class="box">
+                <div class="box" id="lowbudgetburgir">
                     <div class="box-img">
                         <img src="img/lov-budget-burgir.png" alt="">
                         <h2>Low budget burgir</h2>
@@ -96,7 +96,7 @@
                         <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                     </div>
             </div>
-            <div class="box">
+            <div class="box idnagylafimenu">
                 <div class="box-img">
                     <img src="img/nagylafimenu.png" alt="">
                     <h2>Lafi Menü</h2>
@@ -105,7 +105,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="burgir+niga">
                 <div class="box-img">
                     <img src="img/nigaburger.png" alt="">
                     <h2>Burgir + niga</h2>
@@ -114,7 +114,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="lafimenu2">
                 <div class="box-img">
                     <img src="img/lafimenu2.jpg" alt="">
                     <h2>Olcsóbb Lafi Menü</h2>
@@ -123,7 +123,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="meki">
                 <div class="box-img">
                     <img src="img/meki.png" alt="">
                     <h2>Mekdánelces menü</h2>
@@ -132,7 +132,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="lafiramen">
                 <div class="box-img">
                     <img src="img/lafiramen.jpg" alt="">
                     <h2>1 adag ramen</h2>
@@ -141,7 +141,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="tanyer">
                 <div class="box-img">
                     <img src="img/tanyer.png" alt="">
                     <h2>Tányér</h2>
@@ -150,7 +150,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="kenyer">
                 <div class="box-img">
                     <img src="img/kenyer.png" alt="">
                     <h2>Kenyér</h2>
@@ -159,7 +159,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="blackburgir">
                 <div class="box-img">
                     <img src="img/blackburgir.png" alt="">
                     <h2>Fekete burgir</h2>
@@ -168,7 +168,7 @@
                     <a href="#order" class="cart"><i class='bx bx-cart-alt'></i></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="falusiburgir">
                 <div class="box-img">
                     <img src="img/falusiburgir.jpg" alt="">
                     <h2>Falusi burgir</h2>
@@ -200,6 +200,7 @@
         <table id="itemlist">
 
         </table>
+        <script src="sql.js"></script>
     </section>
             
     <!-- Szolgáltatások -->
@@ -265,7 +266,7 @@
         <div class="contact-box address">
             <h3>Elérhetőség</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d283.1894381878316!2d21.61718375435319!3d47.5256085553516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470e126f604401%3A0x8f271fee14d8556c!2sDSZC%20Mechwart%20Andr%C3%A1s%20G%C3%A9pipari%20%C3%A9s%20Informatikai%20Technikum!5e0!3m2!1shu!2shu!4v1666630397752!5m2!1shu!2shu" width="300rem" height="200rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <i class='bx bxs-map'><span>Mechart</span></i>
+            <i class='bx bxs-map'><span>Mechwart</span></i>
             <i class='bx bxs-phone'><span>+36 90 420 6969</span></i>
             <i class='bx bxs-envelope'><span>lafiburgir@lafi.com</span></i>
         </div>
